@@ -1,5 +1,3 @@
-import { RSA_NO_PADDING } from 'constants';
-
 import React from 'react';
 import { RouteProps, Route as ReactDOMRoute, Redirect } from 'react-router-dom';
 
@@ -24,13 +22,13 @@ const Route: React.FC<RouterProps> = ({
         return isPrivate === !!user ? (
           <Component />
         ) : (
-          <Redirect
-            to={{
-              pathname: isPrivate ? '/' : '/dashboard',
-              state: { from: location },
-            }}
-          />
-        );
+            <Redirect
+              to={{
+                pathname: isPrivate ? '/' : '/dashboard',
+                state: { from: location },
+              }}
+            />
+          );
       }}
     />
   );

@@ -48,7 +48,7 @@ export const ToastProvider: React.FC = ({ children }) => {
   );
 };
 
-export function useToast() {
+export function useToast(): ToastContextData {
   const context = useContext(ToastContext);
 
   if (!context) {
