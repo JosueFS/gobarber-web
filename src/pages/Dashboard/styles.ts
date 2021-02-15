@@ -89,6 +89,10 @@ export const Schedule = styled.div`
       align-items: center;
     }
 
+    span:last-child {
+      text-transform: capitalize;
+    }
+
     span + span::before {
       content: '';
       width: 1px;
@@ -175,6 +179,8 @@ export const Appointment = styled.div`
     display: flex;
     align-items: center;
     color: #f4ede8;
+    width: 64px;
+
     svg {
       color: #ff9000;
       margin-right: 8px;
