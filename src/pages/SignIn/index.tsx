@@ -82,7 +82,7 @@ const SignIn: React.FC = () => {
             <Input
               name="password"
               icon={FiLock}
-              placeholder="Password"
+              placeholder="Senha"
               type="password"
             />
 
