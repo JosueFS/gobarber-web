@@ -17,18 +17,24 @@ export const Container = styled.div<ContainerProps>`
   width: 100%;
   color: #666360;
 
-  ${(props => props.hasError && css`
-    border-color: #c53030;
-  `)}
+  ${props =>
+    props.hasError &&
+    css`
+      border-color: #c53030;
+    `}
 
-  ${(props) => props.isFocused && css`
-    color: #FF9000;
-    border-color: #FF9000;
-  `}
+  ${props =>
+    props.isFocused &&
+    css`
+      color: #ff9000;
+      border-color: #ff9000;
+    `}
 
-  ${(props) => props.isFilled && css`
-    color: #FF9000;
-  `}
+  ${props =>
+    props.isFilled &&
+    css`
+      color: #ff9000;
+    `}
 
   display: flex;
   align-items: center;
@@ -63,11 +69,11 @@ export const Error = styled(Tooltip)`
   }
 
   span {
-    background: #C53030;
-    color: #FFF;
+    background: #c53030;
+    color: #fff;
 
     &::before {
-      border-color: #C53030 transparent;
+      border-color: #c53030 transparent;
     }
   }
 `;
