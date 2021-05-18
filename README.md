@@ -71,7 +71,7 @@ Technologies that I used to develop this web client
 
 ### Requirements
 
-- Have this application's [API](https://github.com/JosueFS/gobarber-api) running
+- Have this application's [API](https://github.com/JosueFS/gobarber-backend-ts) running
 
 **Clone the project and access the folder**
 
